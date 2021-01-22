@@ -40,7 +40,7 @@ app.use("/api/user", userRoute);
 app.use("/api/products", productRoute);
 app.use("/api/cart", cartRoute);
 
-PORT = 5000;
-app.listen(PORT, () => {
+
+app.listen(process.env.PORT, () => {
   console.log(`Listening on ${PORT} :`.green);
 });
